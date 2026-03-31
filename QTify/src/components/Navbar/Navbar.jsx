@@ -11,10 +11,12 @@ function Navbar({ searchData }) {
       <Link to="/">
         <Logo />
       </Link>
-      <Search
-        placeholder="Search a song of your choice"
-        searchData={searchData}
-      />
+      <div style={{ flex:1, margin: "0 400px" }}>
+        <Search
+          placeholder="Search a album of your choice"
+          searchData={searchData}
+        />
+      </div>
       <Button>Give Feedback</Button>
     </nav>
   );
