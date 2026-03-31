@@ -9,7 +9,17 @@ function App() {
     <>
       <Navbar searchData={[]}/>
       <Hero />
-      <Section title="Top Albums" />
+
+      <Section 
+        title="Top Albums" 
+        api="https://qtify-backend.labs.crio.do/albums/top"
+      />
+    
+      <Section 
+        title="New Albums"
+        api="https://qtify-backend.labs.crio.do/albums/new"
+      />
+
     </>
   );
 }

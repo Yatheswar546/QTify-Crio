@@ -11,13 +11,55 @@
     color: var(--color-white);
 }
 
+.toggle{
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
 .collapse{
     color: var(--color-primary);
     cursor: pointer;
 }
 
-.grid{
+.carouselWrapper{
+    position: relative;
+}
+
+.carousel{
     display: flex;
     gap: 20px;
-    overflow-x: auto;
+    overflow-x: scroll;
+    scroll-behavior: smooth;   
+    width: 100%;
+}
+
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+
+.arrowLeft,
+.arrowRight{
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background: var(--color-primary);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 2;
+}
+
+.arrowLeft{
+    left: -10px;
+}
+
+.arrowRight{
+    right: -10px;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
