@@ -1,0 +1,23 @@
+.section{
+    padding: 20px 32px;
+    background-color: var(--color-black);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    color: var(--color-white);
+}
+
+.collapse{
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.grid{
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
