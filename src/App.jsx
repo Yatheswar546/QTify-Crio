@@ -20,6 +20,12 @@ function App() {
         api="https://qtify-backend.labs.crio.do/albums/new"
       />
 
+      <Section 
+        title="Songs"
+        api="https://qtify-backend.labs.crio.do/songs"
+        isSongSection={true}
+      />
+
     </>
   );
 }

@@ -63,3 +63,17 @@
     flex-wrap: wrap;
     gap: 20px;
 }
+
+.MuiTabs-root{
+    margin-bottom: 16px;
+}
+
+.MuiTab-root{
+    color: white !important;
+    text-transform: none !important;
+    font-size: 14px !important;
+}
+
+.Mui-selected{
+    color: var(--color-primary) !important;
+}
